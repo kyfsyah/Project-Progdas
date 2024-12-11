@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inventory Control</title>
+</head>
+<body>
+    <div class="Container">
+
+        <h1>Form Produk</h1>
+    
+            <label >Kode produk</label>
+            <input type="text" id="kode-Produk" readonly>
+
+            <label id="nama-produk">Nama produk</label>
+            <input type="text" id="nama-Produk">
+   
+        <label>Harga produk</label>
+            <input type="number" id="harga-Produk">
+    
+            <label>Satuan</label>
+            <select id="satuan-Produk">
+                <option value="Gelas">Gelas</option>
+                <option>Pcs</option>
+                <option>Kardus</option>
+            </select>
+    
+            <label>Kategori</label>
+            <select id="kategori-Produk">
+                <option>Minuman dingin</option>
+                <option>Minuman panas</option>
+            </select>
+    
+            <label>URL gambar</label>
+            <input type="text" id="gambar-Produk">
+    
+            <label>Stok</label>
+            <input type="number" id="stok-Produk">
+
+        <button id="tombol"onclick="menyimpanProduk()">Submit</button>
+        
+    </div>
+
+     <br>
+
+     <table>
+        <thead>
+        <tr>
+            <th>Nomor</th>
+            <th>kode produk</th>
+            <th>Nama produk</th>
+            <th>Harga produk</th>
+            <th>Satuan</th>
+            <th>Kategori</th>
+            <th>url gambar</th>
+            <th>Stok awal</th>
+            <th>Modify</th>
+        </tr>
+    </thead>
+    <tbody id="t-body">
+        <tr>
+            <td>1</td>
+            <td>001</td>
+            <td>Coca Cola</td>
+            <td>7000</td>
+            <td>3000</td>
+            <td>minuman dingin</td>
+            <td><img src="assets/Coca-ColaZeroSugarAllProducts.jpg" width="100" height="100"></td>
+            <td>69</td>
+            <td>Edit | delete</td>
+        </tr>
+    </tbody>
+     </table>
+
+     <script src="indek.js"></script>
+</body>
+</html>
